@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPIT</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/pocetna.css">
+
+</head>
+<body>
+
+  <div id="Header">
+    <div class ="prviDioHeader">
+
+    <button id="logout-btn">Odjava</button>
+    <a href="prijava.html" target="_self" class="prijava">Prijavi se <img id="prijava_icon" src="../slike/prijava_icon.jpeg" alt="ikona-prijave"></a>
+    <a href="pocetna.html" target="_self" id="početna"> <img id="house_icon" src="../slike/house_icon.png" alt="ikona-kuće"> Početna</a>
+    <a href="o_nama.html" target="_self" id="opis"><img id="opis_icon" src="../slike/Decs_icon.png" alt="ikona-opis">O nama</a>
+    <a href="novosti.html" target="_self" id="novosti"><img id="info_icon" src="../slike/info_icon.png" alt="ikona-novosti">Novosti</a>
+    <a  id="nastavni_plan" href="nastavni_plan.html"> <img src="../slike/nastavni_plan.png" alt="nastavni plan"> Nastavni plan</a>
+    <a href="#myBtn" id="myBtn"><img id="message_icon" src="../slike/message_icon.jpeg" alt="ikona-pošte">Kontakt</a>
+
+</div>
+
+
+<div class="drugiDioHeader">
+  
+  <a href=""class="nistePrijavljeni">Niste Prijavljeni</a>
+  <a href=""class="ispisTextaZaPrijavuKorisnika">Prijavljeni ste kao:</a>
+  <a href=""id="imeKorisnika"></a>
+  
+</div>
+</div>
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2><img src="../slike/message_icon.jpeg" alt="pismo"> Kontaktirajte nas</h2>
+    </div>
+    <form action="https://www.fulek.com/mvc/supit/project-contact-form" method="post">
+    <div class="modal-body">
+        <label for="FullName">Ime i prezime</label><br>
+            <input type="text" placeholder="Ime i prezime" name="FullName" required><br><br>
+            <label for="Email">Email</label><br>
+            <input type="text" placeholder="Email" name="Email" required><br><br>
+            <label for="Importance">Važnost:</label> <br>
+            <select name="Importance" id="Importance">
+              <option value="visoka">Visoka</option>
+              <option value="srednja">Srednja</option>
+              <option value="niska">Niska</option>
+            </select><br><br>
+            <label for="Message">Poruka:</label><br>
+            <input class="poruka" type="text" name="Message" required><br>
+    </div>
+    <div class="modal-footer">
+      <div class="gumbPoslao">
+        <label for="ReceiveNewsletter">Želim primati obavijesti</label>
+        <input type="checkbox" id="ReceiveNewsletter" name="ReceiveNewsletter" value="true">
+      <button class="posalji" type="submit">Pošalji</button>
+    </div>
+    </div>
+  </form>
+  </div>
+  
+  </div>
+  
+  <script src="../ostali js/kontakt.js"></script>
+
+
+<script src="../auth/logout.js"></script>
+
+<script src="../auth/dohvacanjeImenaKorisnika.js"></script>
+
+<video class="video_pocetna" autoplay loop muted src="../video/typingOnlaptop.mp4" type="video/mp4"></video>
+
+<h1 id="pisajuciText"></h1>
+
+<script src="../ostali js/samoPisac.js">
+</script>
+
+
+
+
+</body>
+</html>

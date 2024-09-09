@@ -1,0 +1,1423 @@
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+  
+}
+
+
+
+#Header{
+  width:100%;
+  height:100px;
+  line-height:100px;
+  background-color: black; 
+  top: 0;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#Header img{
+
+  width: 20px;
+  background-color: orange;
+  margin: 0 10px;
+  
+}
+#Header #prijava_icon{
+  background-color: black;
+}
+
+#Header a {
+  margin-bottom: 20px;
+  padding: 0;
+  color: white;
+  font-weight: bold;
+  padding-left: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration-line: none;
+
+}
+
+#Header :hover{
+  color: yellow !important;
+}
+
+#logout-btn {
+  color: white;
+  font-weight: bold;
+  height: 30px;
+  width: 100px;
+  background-color: black;
+  border: 2px solid orange;
+  box-shadow: 0px 0px 6px 4px orange;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#Header #logout-btn :hover{
+  background-color: rgb(245, 245, 245) ;
+}
+
+.drugiDioHeader{
+
+  margin-right: 30px;
+}
+
+.nistePrijavljeni
+{
+  pointer-events: none;
+}
+
+.ispisTextaZaPrijavuKorisnika
+{
+  
+pointer-events: none;
+}
+
+#imeKorisnika
+{
+  padding-left: 3px !important;
+    font-size: 22px;
+    font-weight: bolder !important;
+    color: #ff8800 !important;
+    pointer-events: none;
+}
+
+
+
+@keyframes animacijaSlike {
+100%{
+    top: 0px;
+    position: relative;
+  }
+0%{
+  top: -400px;
+  position: relative;
+  }
+}
+
+@keyframes animacijaNaslov {
+ 100%{}
+  0%{
+   padding-top: 100px;
+      }
+
+      
+}
+
+#pocetnaRiječ{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+    color: white;
+}
+
+.novosti1{
+    width: 100%;
+    height: 350px;
+    animation: animacijaSlike 0.8s ease-in-out;
+}
+.naslov {
+    text-align: center;
+    border-bottom: 4px solid orange;
+    border-radius: 25%;
+    padding-top: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    animation: animacijaNaslov 0.8s ease-in-out ;
+}
+
+.textNovosti1{
+    font-size: large;
+    padding-top: 70px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.slikeNovosti1{
+    text-align: center;
+    margin: 70px ;
+    padding: 45px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-areas: 
+    'prije prvaSlika  poslije'
+    'video  video     video'
+    ;
+    grid-gap: 15px;
+    
+    }
+    .prvaSlika {grid-area: prvaSlika;}
+    .video{grid-area: video;}
+
+.slikeNovosti1 img{
+    width: 600px;
+}
+
+.slikeNovosti1  video{
+    width: 600px;
+}
+
+#prijeVanGalerije{
+  grid-area: prije;
+width: 30px;
+height: 110px;
+text-align: left;
+}
+
+#prijeGumb button{
+  height: 190px;
+}
+
+#poslijeVanGalerije{
+  grid-area: poslije;
+  width: 30px;
+  height: 110px;  
+  text-align: left;
+}
+
+#poslijeGumb button{
+  height: 190px;
+}
+#poslijeGumb{
+  text-align: left;
+
+}
+#prijeGumb{
+
+  text-align: right;
+
+}
+
+
+
+.Galerija {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+#trenutnaSlikaUPregledu{
+  width: 90%;
+  padding-left: 13px;
+}
+
+.sadrzajGalerija {
+  position: relative;
+  background-color: black;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  font-size: larger;
+  margin-top: 50px;
+  height: 65%;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+
+.tjeloGalerija {
+  padding-top: 110px;
+}
+
+
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  font-size: larger;
+  height: 65%;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #ff8800;
+  color: white;
+}
+
+.modal-content input{
+width: 97%;
+height: 35px;
+}
+
+.modal-content select{
+  width: 97%;
+  height: 35px;
+}
+
+.modal-body {
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.poruka{
+  width: 300px !important;
+  height: 50px !important;
+}
+
+#Importance{
+  padding-left: 15px;
+}
+
+#ReceiveNewsletter{
+height: 15px;
+width: 15px;
+}
+
+.posalji{
+  color: white;
+  font-weight: bold;
+  height: 30px;
+  width: 100px;
+  background-color: black;
+  border: 2px solid orange;
+  box-shadow: 0px 0px 6px 4px orange;
+  cursor: pointer;
+}
+
+.gumbPoslao{
+text-align: center ;
+}
+
+h2 img{
+
+width: 50px;
+
+}
+
+.modal-footer {
+  padding: 10px 16px;
+  background-color: #ff8800;
+  color: white;
+  padding-top: 6px;
+  margin-top: 147px;
+}
+
+
+
+.doljnjaSlika {
+  width: 100%;
+    height: 135px;
+
+    bottom: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1000px) {
+  
+
+
+  body{
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  
+  
+  #Header{
+  width:100%;
+  height:0%;
+  line-height:100px;
+  background-color: black; 
+  top: 0;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  }
+  
+  #Header img{
+  
+  width: 20px;
+  background-color: orange;
+  margin: 0 10px;
+  
+  }
+  #Header #prijava_icon{
+  background-color: black;
+  }
+  
+  #Header a {
+  margin-bottom: 20px;
+  padding: 0;
+  color: white;
+  font-weight: bold;
+  padding-left: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration-line: none;
+  
+  }
+  
+  #Header :hover{
+  color: yellow !important;
+  }
+  
+  #logout-btn {
+  color: white;
+  font-weight: bold;
+  height: 30px;
+  width: 100px;
+  background-color: black;
+  border: 2px solid orange;
+  box-shadow: 0px 0px 6px 4px orange;
+  margin-left: 10px;
+  cursor: pointer;
+  }
+  
+  #Header #logout-btn :hover{
+  background-color: rgb(245, 245, 245) ;
+  }
+  
+  .drugiDioHeader{
+  
+  margin-right: 30px;
+  }
+  
+  .nistePrijavljeni
+  {
+  pointer-events: none;
+  }
+  
+  .ispisTextaZaPrijavuKorisnika
+  {
+  
+  pointer-events: none;
+  }
+  
+  #imeKorisnika
+  {
+  padding-left: 3px !important;
+    font-size: 22px;
+    font-weight: bolder !important;
+    color: #ff8800 !important;
+    pointer-events: none;
+  }
+  
+  
+  @keyframes animacijaSlike {
+  100%{
+    top: 0px;
+    position: relative;
+  }
+  0%{
+  top: -400px;
+  position: relative;
+  }
+  }
+  
+  @keyframes animacijaNaslov {
+  100%{
+  
+  }
+    0%{
+   padding-top: 100px;
+      }
+  
+      
+  }
+  
+  #pocetnaRiječ{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+    color: white;
+  }
+  
+  .novosti1{
+    width: 100%;
+    height: 0%;
+    animation: animacijaSlike 0.8s ease-in-out;
+  }
+  .naslov {
+    text-align: center;
+    border-bottom: 4px solid orange;
+    border-radius: 25%;
+    padding-top: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    animation: animacijaNaslov 0.8s ease-in-out ;
+  }
+  
+  .textNovosti1{
+    font-size: large;
+    padding-top: 70px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+  .slikeNovosti1{
+    text-align: center;
+    margin: 0 ;
+    padding: 45px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-areas: 
+    'prije prvaSlika  poslije'
+    'video  video     video'
+    ;
+    grid-gap: 15px;
+    
+    }
+    .prvaSlika {grid-area: prvaSlika;}
+    .video{grid-area: video;}
+  
+  .slikeNovosti1 img{
+    width: 600px;
+  }
+  
+  .slikeNovosti1  video{
+    width: 85%;
+  }
+  
+  #prije{
+  grid-area: prije;
+  width: 30px;
+  height: 110px;
+  text-align: left;
+  }
+  
+  #prije button{
+  height: 190px;
+  }
+  
+  #poslije{
+  grid-area: poslije;
+  width: 30px;
+  height: 110px;  
+  text-align: left;
+  }
+  
+  #poslije button{
+  height: 190px;
+  }
+  
+  
+  #trenutnaSlikaUPregledu{
+  width: 90%;
+  }
+  
+  
+  
+  
+  body {font-family: Arial, Helvetica, sans-serif;}
+  
+  .modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  }
+  
+  .modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  font-size: larger;
+  height: 65%;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+  }
+  
+  @-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+  }
+  
+  .close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  }
+  
+  .modal-header {
+  padding: 2px 16px;
+  background-color: #ff8800;
+  color: white;
+  }
+  
+  .modal-content input{
+  width: 97%;
+  height: 35px;
+  }
+  
+  .modal-content select{
+  width: 97%;
+  height: 35px;
+  }
+  
+  .modal-body {
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+  
+  .poruka{
+  width: 300px !important;
+  height: 50px !important;
+  }
+  
+  #Importance{
+  padding-left: 15px;
+  }
+  
+  #ReceiveNewsletter{
+  height: 15px;
+  width: 15px;
+  }
+  
+  .posalji{
+  color: white;
+  font-weight: bold;
+  height: 30px;
+  width: 100px;
+  background-color: black;
+  border: 2px solid orange;
+  box-shadow: 0px 0px 6px 4px orange;
+  cursor: pointer;
+  }
+  
+  .gumbPoslao{
+  text-align: center ;
+  }
+  
+  h2 img{
+  
+  width: 50px;
+  
+  }
+  
+  .modal-footer {
+  padding: 10px 16px;
+  background-color: #ff8800;
+  color: white;
+  padding-top: 6px;
+  margin-top: 147px;
+  }
+  
+  
+  
+  .doljnjaSlika {
+  width: 100%;
+    height: 135px;
+    bottom: 0;
+  
+  }
+  
+  }
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+  
+
+  body {
+    margin: 0;
+    padding: 0;
+    min-width: 270px;
+}
+
+
+.prijava{
+  font-size: 0;
+}
+#početna{
+  font-size: 0;
+
+}
+#opis{
+  font-size: 0;
+
+}
+#nastavni_plan{
+  font-size: 0;
+
+}
+#novosti{
+  font-size: 0;
+
+}
+#myBtn{
+  font-size: 0;
+
+}
+
+
+#Header{
+width:100%;
+height:0%;
+line-height:100px;
+background-color: black; 
+top: 0;
+position: sticky;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
+
+#Header img{
+
+width: 20px;
+background-color: orange;
+margin: 0 10px;
+
+}
+#Header #prijava_icon{
+background-color: black;
+}
+
+#Header a {
+margin-bottom: 20px;
+padding: 0;
+color: white;
+font-weight: bold;
+padding-left: 25px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-decoration-line: none;
+
+}
+
+#Header :hover{
+color: yellow !important;
+}
+
+#logout-btn {
+color: white;
+font-weight: bold;
+height: 30px;
+width: 100px;
+background-color: black;
+border: 2px solid orange;
+box-shadow: 0px 0px 6px 4px orange;
+margin-left: 10px;
+cursor: pointer;
+}
+
+#Header #logout-btn :hover{
+background-color: rgb(245, 245, 245) ;
+}
+
+.drugiDioHeader{
+
+margin-right: 30px;
+}
+
+.nistePrijavljeni
+{
+pointer-events: none;
+}
+
+.ispisTextaZaPrijavuKorisnika
+{
+
+pointer-events: none;
+}
+
+#imeKorisnika
+{
+padding-left: 3px !important;
+  font-size: 22px;
+  font-weight: bolder !important;
+  color: #ff8800 !important;
+  pointer-events: none;
+}
+
+
+@keyframes animacijaSlike {
+100%{
+  top: 0px;
+  position: relative;
+}
+0%{
+top: -400px;
+position: relative;
+}
+}
+
+@keyframes animacijaNaslov {
+100%{
+
+}
+  0%{
+ padding-top: 100px;
+    }
+
+    
+}
+
+#pocetnaRiječ{
+  text-align: center;
+  font-weight: bolder;
+  font-size: 50px;
+  color: white;
+}
+
+.novosti1{
+  width: 100%;
+  height: 0%;
+  animation: animacijaSlike 0.8s ease-in-out;
+}
+.naslov {
+  text-align: center;
+  border-bottom: 4px solid orange;
+  border-radius: 25%;
+  padding-top: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  animation: animacijaNaslov 0.8s ease-in-out ;
+}
+
+.textNovosti1{
+  font-size: large;
+  padding-top: 70px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+
+
+
+.slikeNovosti1 {
+  text-align: center;
+  margin: 0;
+  padding: 45px;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas:
+      'prije'
+      'prvaSlika'
+      'poslije'
+      'video';
+  grid-gap: 15px;
+}
+
+#prijeGumb {
+text-align: center;
+}
+#prijeGumb button {
+height: 30px;
+}
+
+#prijeVanGalerije {
+grid-area: prije;
+width: 70%;
+height: 110px;
+text-align: center;
+}
+
+
+#poslijeGumb {
+text-align: center;
+}
+#poslijeGumb button {
+height: 30px;
+}
+
+#poslijeVanGalerije {
+grid-area: prije;
+width: 70%;
+height: 110px;
+text-align: center;
+}
+
+.sadrzajGalerija {
+  position: relative;
+  background-color: black;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  font-size: larger;
+  margin-top: 50px;
+  height: 45%;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+
+
+.slikeNovosti1 img {
+width: 100%;
+}
+
+
+
+  .prvaSlika {grid-area: prvaSlika;}
+  .video{grid-area: video;}
+
+.slikeNovosti1 img{
+  width: 300px;
+}
+
+.slikeNovosti1  video{
+  width: 85%;
+}
+
+
+
+#trenutnaSlikaUPregledu{
+width: 90%;
+}
+
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+.modal-footer {
+  padding: 10px 16px;
+  background-color: #ff8800;
+  color: white;
+  padding-top: 6px;
+  margin-top: 0;
+}
+
+.modal-content {
+position: relative;
+background-color: #fefefe;
+margin: auto;
+padding: 0;
+border: 1px solid #888;
+font-size: larger;
+height: 65%;
+width: 50%;
+box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+-webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.4s;
+animation-name: animatetop;
+animation-duration: 0.4s;
+min-width: 250px;
+}
+
+
+
+
+
+.modal {
+display: none; 
+position: fixed; 
+z-index: 1; 
+padding-top: 100px; 
+left: 0;
+top: 0;
+width: 100%;
+height: 100%; 
+overflow: auto; 
+background-color: rgb(0,0,0); 
+background-color: rgba(0,0,0,0.4); 
+z-index: 6;
+}
+
+.modal-content {
+position: relative;
+background-color: #fefefe;
+margin: auto;
+padding: 0;
+border: 1px solid #888;
+font-size: larger;
+height: 65%;
+width: 50%;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+-webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.4s;
+animation-name: animatetop;
+animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+from {top:-300px; opacity:0} 
+to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+
+.close {
+color: white;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+.modal-header {
+padding: 2px 16px;
+background-color: #ff8800;
+color: white;
+}
+
+.modal-content input {
+width: 80% !important;
+height: 35px !important;
+}
+
+.modal-content select{
+width: 80%;
+height: 35px;
+}
+
+.modal-body {
+margin-left: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+
+
+#Importance{
+padding-left: 15px;
+}
+
+#ReceiveNewsletter{
+height: 15px;
+width: 15px;
+}
+
+.posalji{
+color: white;
+font-weight: bold;
+height: 30px;
+width: 100px;
+background-color: black;
+border: 2px solid orange;
+box-shadow: 0px 0px 6px 4px orange;
+cursor: pointer;
+}
+
+.gumbPoslao{
+text-align: center ;
+}
+
+h2 img{
+
+width: 50px;
+
+}
+
+
+
+.doljnjaSlika {
+width: 100%;
+  height: 135px;
+  bottom: 0;
+
+}
+
+}
+
+
+
+@media(max-width:1345px){
+  
+  .textNovosti1 {
+    font-size: large;
+    padding-top: 70px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.naslov {
+  text-align: center;
+  border-bottom: 4px solid orange;
+  border-radius: 25%;
+  padding-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  animation: animacijaNaslov 0.8s ease-in-out;
+}
+
+
+.modal-footer {
+  padding: 10px 16px;
+  background-color: #ff8800;
+  color: white;
+  padding-top: 6px;
+  margin-top: 0;
+}
+
+.modal-content {
+position: relative;
+background-color: #fefefe;
+margin: auto;
+padding: 0;
+border: 1px solid #888;
+font-size: larger;
+height: 65%;
+width: 50%;
+box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+-webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.4s;
+animation-name: animatetop;
+animation-duration: 0.4s;
+min-width: 250px;
+}
+
+
+
+
+
+.modal {
+display: none; 
+position: fixed; 
+z-index: 1; 
+padding-top: 100px; 
+left: 0;
+top: 0;
+width: 100%;
+height: 100%; 
+overflow: auto; 
+background-color: rgb(0,0,0); 
+background-color: rgba(0,0,0,0.4); 
+z-index: 6;
+}
+
+.modal-content {
+position: relative;
+background-color: #fefefe;
+margin: auto;
+padding: 0;
+border: 1px solid #888;
+font-size: larger;
+height: 65%;
+width: 50%;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+-webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.4s;
+animation-name: animatetop;
+animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+from {top:-300px; opacity:0} 
+to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+
+.close {
+color: white;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+.modal-header {
+padding: 2px 16px;
+background-color: #ff8800;
+color: white;
+}
+
+.modal-content input {
+width: 80% !important;
+height: 35px !important;
+}
+
+.modal-content select{
+width: 80%;
+height: 35px;
+}
+
+.modal-body {
+margin-left: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+
+
+#Importance{
+padding-left: 15px;
+}
+
+#ReceiveNewsletter{
+height: 15px;
+width: 15px;
+}
+
+.posalji{
+color: white;
+font-weight: bold;
+height: 30px;
+width: 100px;
+background-color: black;
+border: 2px solid orange;
+box-shadow: 0px 0px 6px 4px orange;
+cursor: pointer;
+}
+
+.gumbPoslao{
+text-align: center ;
+}
+
+h2 img{
+
+width: 50px;
+
+}
+
+}
+
+
+
+
+@media(max-width:830px){
+
+ 
+
+  #Header {
+    width: 100%;
+    height: 100px;
+    line-height: 20px;
+    font-size: 10px;
+    background-color: black;
+    top: 0;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .sadrzajGalerija {
+    position: relative;
+    background-color: black;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    font-size: larger;
+    margin-top: 50px;
+    height: 45%;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+  }
+  
+
+
+@media(max-width:740px){
+  .slikeNovosti1 {
+    text-align: center;
+    margin: 0;
+    padding: 45px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        'prije'
+        'prvaSlika'
+        'poslije'
+        'video';
+    grid-gap: 15px;
+}
+
+#prijeGumb {
+  text-align: center;
+}
+#prijeGumb button {
+  height: 30px;
+}
+
+#prijeVanGalerije {
+  grid-area: prije;
+  width: 70%;
+  height: 110px;
+  text-align: center;
+}
+
+
+#poslijeGumb {
+  text-align: center;
+}
+#poslijeGumb button {
+  height: 30px;
+}
+
+#poslijeVanGalerije {
+  grid-area: prije;
+  width: 70%;
+  height: 110px;
+  text-align: center;
+}
+
+.slikeNovosti1 img {
+  width: 100%;
+}
+
+}
+
+
+
+@media(max-width:280px){
+
+  .doljnjaSlika {
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+}
+
+#Header {
+  width: 100%;
+  height: 100px;
+  line-height: 20px;
+  font-size: 0px !important;
+  background-color: black;
+  top: 0;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.novosti3Slika {
+  height: 80px;
+  width: 100%;
+  animation: animacijaSlike 0.8s ease-in-out;
+}
+}
+
+
+

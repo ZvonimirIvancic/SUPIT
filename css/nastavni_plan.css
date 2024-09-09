@@ -1,0 +1,1040 @@
+
+body{
+    margin: 0;
+    padding: 0;
+  
+}
+
+#Header{
+  width:100%;
+  height:100px;
+  line-height:100px;
+  background-color: black; 
+  top: 0;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#Header img{
+
+  width: 20px;
+  background-color: rosybrown;
+  margin: 0 10px;
+  
+}
+#Header #prijava_icon{
+  background-color: black;
+}
+
+#Header a {
+  margin-bottom: 20px;
+  padding: 0;
+  color: white;
+  font-weight: bold;
+  padding-left: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration-line: none;
+
+}
+
+#Header :hover{
+  color: yellow !important;
+}
+
+#logout-btn {
+  color: white;
+  font-weight: bold;
+  height: 30px;
+  width: 100px;
+  background-color: black;
+  border: 2px solid orange;
+  box-shadow: 0px 0px 6px 4px orange;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#Header #logout-btn :hover{
+  background-color: rgb(245, 245, 245) ;
+}
+
+.drugiDioHeader{
+
+  margin-right: 30px;
+}
+
+.nistePrijavljeni
+{
+  pointer-events: none;
+}
+
+.ispisTextaZaPrijavuKorisnika
+{
+  
+pointer-events: none;
+}
+
+#imeKorisnika
+{
+  padding-left: 3px !important;
+    font-size: 22px;
+    font-weight: bolder !important;
+    color: #bc8f8f  !important;
+    pointer-events: none;
+}
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  font-size: larger;
+  height: 65%;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: rosybrown;
+  color: white;
+}
+
+.modal-content input{
+width: 97%;
+height: 35px;
+}
+
+.modal-content select{
+  width: 97%;
+  height: 35px;
+}
+
+.modal-body {
+  margin-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.poruka{
+  width: 300px !important;
+  height: 50px !important;
+}
+
+#Importance{
+  padding-left: 15px;
+}
+
+#ReceiveNewsletter{
+height: 15px;
+width: 15px;
+}
+
+.posalji{
+  color: white;
+  font-weight: bold;
+  height: 30px;
+  width: 100px;
+  background-color: black;
+  border: 2px solid orange;
+  box-shadow: 0px 0px 6px 4px orange;
+  cursor: pointer;
+}
+
+.gumbPoslao{
+text-align: center ;
+}
+
+h2 img{
+
+width: 50px;
+
+}
+
+.modal-footer {
+  padding: 10px 16px;
+  background-color: rosybrown;
+  color: white;
+  padding-top: 6px;
+  margin-top: 147px;
+}
+
+@keyframes dovlacenje{
+  100%{
+    
+  }
+  0%{margin-top: -200px;}
+}
+
+.nastavniPlan{
+  text-align: center;
+  border-bottom: 4px solid #ff8800;
+  margin: 5% 35%;
+  animation: dovlacenje 1s ease-in-out ;
+
+}
+
+.odabirKolegija{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#autocomplete-input{
+  width: 30%;
+  height: 30px;
+  align-self: flex-start;
+  box-shadow: 0px 0px 6px 4px orange;
+  border-radius: 15px;
+}
+
+#kolegij-details-table{
+  text-align: center;
+border: 2px solid #888;
+}
+
+
+#kolegij-details-table th{
+  background-color: lightcoral;
+  padding: 25px;
+}
+
+.Obrisi-gumb{
+  box-shadow: 0px 0px 6px 4px orange;
+  background-color: lightgray;
+}
+.Obrisi-gumb  :hover{
+  background-color: lightsalmon;
+}
+
+.doljnjaSlika {
+  width: 100%;
+  height: 150px;
+  position: fixed;
+  bottom:  0;
+}
+
+
+
+
+@media (max-width:1300px) {
+
+
+
+  body{
+    margin: 0;
+    padding: 0;
+  
+}
+
+#Header{
+  width:100%;
+  height: 0%;
+  line-height:100px;
+  background-color: black; 
+  top: 0;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#Header img{
+
+  width: 20px;
+  background-color: rosybrown;
+  margin: 0 10px;
+  
+}
+#Header #prijava_icon{
+  background-color: black;
+}
+
+#Header a {
+  margin-bottom: 20px;
+  padding: 0;
+  color: white;
+  font-weight: bold;
+  padding-left: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration-line: none;
+
+}
+
+#Header :hover{
+  color: yellow !important;
+}
+
+#logout-btn {
+  color: white;
+  font-weight: bold;
+  height: 30px;
+  width: 100px;
+  background-color: black;
+  border: 2px solid orange;
+  box-shadow: 0px 0px 6px 4px orange;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#Header #logout-btn :hover{
+  background-color: rgb(245, 245, 245) ;
+}
+
+.drugiDioHeader{
+
+  margin-right: 30px;
+}
+
+.nistePrijavljeni
+{
+  pointer-events: none;
+}
+
+.ispisTextaZaPrijavuKorisnika
+{
+  
+pointer-events: none;
+}
+
+#imeKorisnika
+{
+  padding-left: 3px !important;
+    font-size: 22px;
+    font-weight: bolder !important;
+    color: #bc8f8f  !important;
+    pointer-events: none;
+}
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+.modal-footer {
+  padding: 10px 16px;
+  background-color: rosybrown;
+  color: white;
+  padding-top: 6px;
+  margin-top: 0;
+}
+
+.modal-content {
+position: relative;
+background-color: #fefefe;
+margin: auto;
+padding: 0;
+border: 1px solid #888;
+font-size: larger;
+height: 65%;
+width: 50%;
+box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+-webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.4s;
+animation-name: animatetop;
+animation-duration: 0.4s;
+min-width: 250px;
+}
+
+
+
+
+
+.modal {
+display: none; 
+position: fixed; 
+z-index: 1; 
+padding-top: 100px; 
+left: 0;
+top: 0;
+width: 100%;
+height: 100%; 
+overflow: auto; 
+background-color: rgb(0,0,0); 
+background-color: rgba(0,0,0,0.4); 
+z-index: 6;
+}
+
+.modal-content {
+position: relative;
+background-color: #fefefe;
+margin: auto;
+padding: 0;
+border: 1px solid #888;
+font-size: larger;
+height: 65%;
+width: 50%;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+-webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.4s;
+animation-name: animatetop;
+animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+from {top:-300px; opacity:0} 
+to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+
+.close {
+color: white;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+.modal-header {
+padding: 2px 16px;
+background-color: rosybrown;
+color: white;
+}
+
+.modal-content input {
+width: 80% !important;
+height: 35px !important;
+}
+
+.modal-content select{
+width: 80%;
+height: 35px;
+}
+
+.modal-body {
+margin-left: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+
+
+#Importance{
+padding-left: 15px;
+}
+
+#ReceiveNewsletter{
+height: 15px;
+width: 15px;
+}
+
+.posalji{
+color: white;
+font-weight: bold;
+height: 30px;
+width: 100px;
+background-color: black;
+border: 2px solid orange;
+box-shadow: 0px 0px 6px 4px orange;
+cursor: pointer;
+}
+
+.gumbPoslao{
+text-align: center ;
+}
+
+h2 img{
+
+width: 50px;
+
+}
+
+
+.nastavniPlan{
+  text-align: center;
+  border-bottom: 4px solid #ff8800;
+  margin: 5% 35%;
+  animation: dovlacenje 1s ease-in-out ;
+
+}
+
+.odabirKolegija{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#autocomplete-input{
+  width: 70%;
+  height: 30px;
+  align-self: flex-start;
+  box-shadow: 0px 0px 6px 4px orange;
+  border-radius: 15px;
+}
+
+#kolegij-details-table{
+  text-align: center;
+border: 2px solid #888;
+}
+
+
+#kolegij-details-table th{
+  background-color: lightcoral;
+  padding: 25px;
+}
+
+.Obrisi-gumb{
+  box-shadow: 0px 0px 6px 4px orange;
+  background-color: lightgray;
+}
+.Obrisi-gumb  :hover{
+  background-color: lightsalmon;
+}
+
+
+
+
+
+.doljnjaSlika {
+  width: 100%;
+  height: 150px;
+  position: fixed;
+  bottom:  0;
+}
+  
+}
+
+
+
+
+
+@media(max-width:1000px){
+  #kolegij-details-table {
+    text-align: center;
+    padding-top: 40px;
+    border: 0;
+}
+
+#autocomplete-input {
+  width: 70%;
+  height: 30px;
+  align-self: flex-start;
+  box-shadow: 0px 0px 6px 4px orange;
+  border-radius: 15px;
+  align-self: center;
+}
+
+#kolegij-details-table th {
+  background-color: lightcoral;
+  padding: 0;
+}
+
+}
+
+
+
+
+@media(max-width:830px){
+
+ 
+
+  #Header {
+    width: 100%;
+    height: 0%;
+    line-height: 100px;
+    background-color: black;
+    top: 0;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #kolegij-details-table th {
+    background-color: lightcoral;
+    padding: 0;
+  }
+  
+  }
+  
+
+
+
+@media (max-width:600px) {
+
+
+
+  body{
+    margin: 0;
+    padding: 0;
+  min-width: 300px;
+}
+.prijava{
+  font-size: 0;
+}
+#početna{
+  font-size: 0;
+
+}
+#opis{
+  font-size: 0;
+
+}
+#nastavni_plan{
+  font-size: 0;
+
+}
+#novosti{
+  font-size: 0;
+
+}
+#myBtn{
+  font-size: 0;
+
+}
+
+
+#Header{
+  width:100%;
+  height: 0%;
+  line-height:50px;
+  background-color: black; 
+  top: 0;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#Header img{
+
+  width: 20px;
+  background-color: rosybrown;
+  margin: 0 10px;
+  
+}
+#Header #prijava_icon{
+  background-color: black;
+}
+
+#Header a {
+  margin-bottom: 20px;
+  padding: 0;
+  color: white;
+  font-weight: bold;
+  padding-left: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration-line: none;
+
+}
+
+#Header :hover{
+  color: yellow !important;
+}
+
+#logout-btn {
+  color: white;
+  font-weight: bold;
+  height: 30px;
+  width: 100px;
+  background-color: black;
+  border: 2px solid orange;
+  box-shadow: 0px 0px 6px 4px orange;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#Header #logout-btn :hover{
+  background-color: rgb(245, 245, 245) ;
+}
+
+.drugiDioHeader{
+
+  margin-right: 30px;
+}
+
+.nistePrijavljeni
+{
+  pointer-events: none;
+}
+
+.ispisTextaZaPrijavuKorisnika
+{
+  
+pointer-events: none;
+}
+
+#imeKorisnika
+{
+  padding-left: 3px !important;
+    font-size: 22px;
+    font-weight: bolder !important;
+    color: #bc8f8f !important;
+    pointer-events: none;
+}
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+.modal-footer {
+  padding: 10px 16px;
+  background-color: rosybrown;
+  color: white;
+  padding-top: 6px;
+  margin-top: 0;
+}
+
+.modal-content {
+position: relative;
+background-color: #fefefe;
+margin: auto;
+padding: 0;
+border: 1px solid #888;
+font-size: larger;
+height: 65%;
+width: 50%;
+box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+-webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.4s;
+animation-name: animatetop;
+animation-duration: 0.4s;
+min-width: 250px;
+}
+
+
+
+
+
+.modal {
+display: none; 
+position: fixed; 
+z-index: 1; 
+padding-top: 100px; 
+left: 0;
+top: 0;
+width: 100%;
+height: 100%; 
+overflow: auto; 
+background-color: rgb(0,0,0); 
+background-color: rgba(0,0,0,0.4); 
+z-index: 6;
+}
+
+.modal-content {
+position: relative;
+background-color: #fefefe;
+margin: auto;
+padding: 0;
+border: 1px solid #888;
+font-size: larger;
+height: 65%;
+width: 50%;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+-webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.4s;
+animation-name: animatetop;
+animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+from {top:-300px; opacity:0} 
+to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+
+.close {
+color: white;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+.modal-header {
+padding: 2px 16px;
+background-color: rosybrown;
+color: white;
+}
+
+.modal-content input {
+width: 80% !important;
+height: 35px !important;
+}
+
+.modal-content select{
+width: 80%;
+height: 35px;
+}
+
+.modal-body {
+margin-left: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+
+
+#Importance{
+padding-left: 15px;
+}
+
+#ReceiveNewsletter{
+height: 15px;
+width: 15px;
+}
+
+.posalji{
+color: white;
+font-weight: bold;
+height: 30px;
+width: 100px;
+background-color: black;
+border: 2px solid orange;
+box-shadow: 0px 0px 6px 4px orange;
+cursor: pointer;
+}
+
+.gumbPoslao{
+text-align: center ;
+}
+
+h2 img{
+
+width: 50px;
+
+}
+
+
+.nastavniPlan{
+  text-align: center;
+  border-bottom: 4px solid #ff8800;
+  margin: 5% 35%;
+  animation: dovlacenje 1s ease-in-out ;
+
+}
+
+
+
+#autocomplete-input{
+  width: 70%;
+  height: 30px;
+  align-self: flex-start;
+  box-shadow: 0px 0px 6px 4px orange;
+  border-radius: 15px;
+}
+
+#kolegij-details-table{
+ 
+  text-align: center;
+border: 0;
+}
+
+
+#kolegij-details-table th {
+  background-color: lightcoral;
+  padding: 0;
+}
+
+.Obrisi-gumb{
+  box-shadow: 0px 0px 6px 4px orange;
+  background-color: lightgray;
+}
+.Obrisi-gumb  :hover{
+  background-color: lightsalmon;
+}
+
+
+
+
+
+.doljnjaSlika {
+  width: 100%;
+  height: 70px;
+  position: static;
+  bottom:  0;
+}
+  
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  #kolegij-details-table {
+    width: 100%;
+  }
+  #kolegij-details-table th,
+  #kolegij-details-table td {
+    display: block;
+    white-space: nowrap;
+  }
+  #kolegij-details-table thead{
+    display: none;
+  }
+
+  #kolegij-details-table th {
+    text-align: left;
+  }
+  #kolegij-details-table td {
+    border-top: 1px solid #ddd;
+    border-bottom: none;
+  }
+  #kolegij-details-table td:before {
+    content: attr(data-th);
+    position: absolute;
+    left: 6px;
+    font-weight: bold;
+    top: 6px;
+  }
+}
+
+
+@media(max-width:400px){
+  #kolegij-details-table td {
+
+    font-size: 90%;
+}
+}
+
+
+@media(max-width:320px){
+  #kolegij-details-table td {
+
+    font-size: 80%;
+}
+}
+
+
+@media(max-width:280px){
+
+  .doljnjaSlika {
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+}
+
+
+.prijava{
+  font-size: 0;
+}
+#početna{
+  font-size: 0;
+
+}
+#opis{
+  font-size: 0;
+
+}
+#nastavni_plan{
+  font-size: 0;
+
+}
+#novosti{
+  font-size: 0;
+
+}
+#myBtn{
+  font-size: 0;
+
+}
+#Header {
+  width: 100%;
+  height: 0%;
+  line-height: 50px;
+  background-color: black;
+  top: 0;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.novosti3Slika {
+  height: 80px;
+  width: 100%;
+  animation: animacijaSlike 0.8s ease-in-out;
+}
+
+#kolegij-details-table th {
+  background-color: lightcoral;
+  padding: 0;
+}
+}
+
+
+
+
+
+
+
+
+
